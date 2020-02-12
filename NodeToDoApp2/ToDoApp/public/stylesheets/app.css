@@ -1,0 +1,281 @@
+body {
+	margin: 0;
+	 background: url(https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg);
+	background-size: cover;
+	background-position:50% 50%;
+	
+}
+
+ul {
+  list-style-type: none;
+ }
+
+li{
+	
+	
+	margin-right: 23px;
+	
+	
+}
+li #toDoItem{
+	
+	border-radius: 25px;
+	background: rgba(218, 240, 238, 0.1);
+	margin-right: 23px;
+	
+}
+
+li span {
+	display: block;
+}
+#myListDropDown{
+	border:1px solid black;
+	width: 125px;
+	margin-left:125px;
+	margin-top: -5px;
+	display:none;
+	border:2px solid rgba(232, 226, 225, 0.5);
+	margin-top:-8px;
+	min-height:100px;
+	min-width:200px;
+	background: rgba(232, 226, 225, 0.5);
+}
+#myLists{
+	margin-left: 20px;
+	font-size: 40px;
+}
+#myLists:hover{
+	cursor:pointer;
+}
+
+#profile{
+	margin-left: 50px;
+}
+
+#profile:hover{
+	cursor:pointer;
+}
+
+#profileLogin{
+	border:1px solid black;
+	min-width: 125px;
+	max-width:190px;
+	height:200px;
+	margin-left: 51px;
+	margin-top: -5px;
+	display:none;
+	border:2px solid rgba(232, 226, 225, 0.5);
+	margin-top:-8px;
+	background: rgba(232, 226, 225, 0.5);
+	
+}
+
+
+.fa-user-check{
+	margin-top: 32px;
+	font-size: 40px;
+}
+
+#mainHeader{
+	padding: 0;
+	height: 100px;
+	width: auto;
+}
+
+#clipboard{
+	margin-right:10px;
+}
+
+.flex-container{
+	min-height: 830px;
+	display: flex;
+	flex-direction: column;
+	 justify-content: center;
+
+}
+#close {
+	margin-right: -340px;
+	margin-top:13px;
+}
+
+#close:hover {
+	cursor: pointer;
+}
+
+#closeLi{
+	position:relative;
+	left:6px;
+}
+
+#actionIcons {
+	padding: 0;
+	margin-left: 340px;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+#title {
+	margin: 0 auto;
+	margin-top: -230px;
+	text-align: center;
+	align-content: center;
+	min-height: 50px;
+	height: 500px;
+	width: 500px;
+	
+}
+
+#titleInput {
+	margin-top: 10px;
+}
+
+#toDoHeader{
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	font-family: 'Coda Caption', sans-serif;
+}
+
+
+#formDiv {
+	margin-top: 20px;
+	min-height: 100px;
+	border-radius: 20px;
+	background: rgba(218, 240, 238, 0.6);
+	box-shadow: 10px 10px 5px black;
+	width:460px;
+	
+	
+}
+
+#list{
+	
+	margin-top:20px;
+}
+
+
+
+#verticalOne{
+	background:rgba(33, 186, 96, 0.5);
+	font-size: 12px;
+}
+
+#verticalTwo{
+	background: rgba(251, 189, 8, 0.5);
+	font-size: 12px;
+}
+#verticalThree{
+	background:rgba(219, 40, 40, 0.5);
+	
+	font-size: 12px;
+}
+
+	/*adds hover effect to urgency icons*/
+#verticalOne:hover{
+	background:rgba(33, 186, 96, 1);
+	box-shadow: 4px 4px 4px black;
+	font-size: 12px;
+}
+
+#verticalTwo:hover{
+	background: rgba(251, 189, 8, 1);
+	box-shadow: 4px 4px 4px black;
+	font-size: 12px;
+}
+#verticalThree:hover{
+	background:rgba(219, 40, 40, 1);
+	box-shadow: 4px 4px 4px black;
+	font-size: 12px;
+}
+
+#objTitle {
+	font-family: 'Coda Caption', sans-serif;
+	font-size: 17px;
+	text-decoration:underline;
+	
+
+	
+}
+
+#objUrgency {
+
+	font-family: 'Sigmar One', cursive;
+	
+}
+
+.ui.form {
+	margin-top: -50px;
+	
+}
+ul.list{
+	margin-bottom:45px;
+	
+}
+
+#description {
+	margin-right:198px;
+	
+}
+
+li.dropDownList {
+	color: black;
+	text-align: center;
+	margin-top:10px;
+	border-radius: 25px;
+	background: rgba(218, 240, 238, 0.6);
+	box-shadow: 10px 10px 5px black;
+	
+}
+
+li#urgencyDropDown:hover{
+	cursor:pointer;
+}
+
+#subTaskOne {
+	margin-top:0;
+	margin-bottom -10px;
+	margin-left:134px;
+	margin-right:134px;
+	padding:0;
+	display: none;
+	border: none;
+}
+#subTaskTwo {
+	padding:0px;
+	margin-bottom:6px;
+	margin-left:134px;
+	margin-right:134;
+	margin-top:0;
+	display: none;
+	border:none;
+}
+.angle {
+	transition: all .5s linear;
+}
+.angle.rotate {
+	transition: all .3s linear;
+	transform: rotate(-90deg);
+}
+.angle:hover{
+	cursor:pointer;
+}
+#textIcon:hover {
+	cursor:pointer;
+}
+#textIconDropDown.envelope {
+	margin-left: 11px;
+}
+
+#emailForm {
+	border-radius: 25px;
+	background: rgba(218, 240, 238, 0.1);
+	margin-left: 63px;
+	margin-top:-8px;
+	margin-bottom:20px;
+	width:360px;
+	display:none;
+}
+
+
+
+

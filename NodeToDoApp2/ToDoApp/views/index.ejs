@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Listful</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/c04760500d.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.css">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+	<link rel='stylesheet'type='text/css'href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/input.min.css'>
+	<link href="https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap" rel="stylesheet">
+</head>
+<body >
+	<header id ='mainHeader'><span id="profile"><i class="fas fa-user-check" onclick='userLogin();'></i></span><span id='myLists' title='Show Task List'><i class="list alternate icon" onclick='showLists();'></i></span>
+	<div id='myListDropDown'>
+		<ul id='minorList'class='list'>
+			Minor<i id='urgencyDropDown'title='View List'class="angle left icon"onclick='minorDropList();'></i>
+		</ul>
+		<ul id='importantList'class='list'>
+			Important<i id='urgencyDropDown'title='View List'class="angle left icon"></i>
+		</ul>
+		<ul id='urgentList'class='list'>   
+			Urgent<i id='urgencyDropDown'title='View List'class="angle left icon"onclick='showUrgentTask();'></i>
+		</ul>
+		</div>
+	<div id = 'profileLogin'>
+		<div class="ui input">
+  			<input type="text" placeholder="Username">
+		</div>
+		<div class="ui input">
+  			<input type="text" placeholder="Password">
+		</div>
+	</div>
+	
+			</header>
+	<div class = "flex-container">
+		<div id= "title">
+			<h1 id ="toDoHeader"><span id ="clipboard"><i class="fas fa-clipboard-check"></i></span>Listful</h1>
+			<button type ="button" id ="toDoButton" class = "ui inverted button">Add Task</button>
+		<div id ="formContainer">	
+			<div id = "formDiv">	
+				<form id ="toDoForm" action='/' method="POST">
+				<div id='titleInputDiv'class='ui input focus'>
+					<input type = "text" name ="title" id = "titleInput" placeholder='Task name'>
+				</div>
+					<div id='urgency' class="ui vertical buttons">
+  								<button type ="button" id = "verticalOne" class="ui green button"value='Minor'name='minorButton'>Minor</button>
+  								<button type ="button" id = "verticalTwo" class="ui yellow button"value='Important'>Important</button>
+  								<button type ="button" id = "verticalThree" class="ui red button"value='Urgent'>Urgent</button>
+							</div>
+					<button type="add" class="ui inverted black button"id ="submitButton">Add</button>
+					<div id ="list">
+					<ul id='toDoList'>
+					</ul>	
+					<div id='emailForm'class="ui input focus">
+						<form id='emailReminder'action='/' method='POST'>
+  							<input  type="text" name='email'id='userEmail'placeholder="Email...">
+							<input  type="time" id="appt" required>
+							<button type='submit'id='emailSubmit' class="ui inverted black button">Send Reminder</button>
+						</form>
+					</div>
+				</div>
+					
+					
+				</form>
+			</div>
+					
+			</div>
+		</div>
+
+	</div>
+	<!-- <script src="/socket.io/socket.io.js"></script> -->
+	
+	<script type="text/javascript" src="js/main.js"></script>	
+	
+</body>
+</html>
